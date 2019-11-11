@@ -1,0 +1,18 @@
+﻿@model MVCApp.ViewModels.RandomMovieViewModel
+
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customer</h2>
+
+<ul>
+    @foreach (var customer in Model.Customers)
+    {
+        <li>@customer.Name</li>
+        <li>@Html.ActionLink(@customer.Name, "Details", "Customer")</li>
+
+    }
+</ul>
+
