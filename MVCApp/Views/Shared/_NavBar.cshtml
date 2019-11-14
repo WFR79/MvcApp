@@ -1,5 +1,4 @@
-﻿
-<div class="navbar navbar-inverse navbar-fixed-top">
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -11,10 +10,19 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("API", "Index", "Help", new { area = "HelpPage" }, null)</li>
+
                 <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                <li>@Html.ActionLink("Customers", "List", "Customer")</li>
-                <li>@Html.ActionLink("Movies", "Contact", "Movie")</li>
+                <li>@Html.ActionLink("Customers", "Index", "Customer")</li>
+                <li>@Html.ActionLink("Movies", "Random", "Movie")</li>
             </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="navbar-link">@Html.ActionLink("Login", "Index", "Login")</li>
+                <li class="navbar-link">@Html.ActionLink("Register", "Index", "Register")</li>
+
+            </ul-
+
             @*@Html.Partial()*@
         </div>
     </div>

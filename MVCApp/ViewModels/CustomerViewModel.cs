@@ -8,7 +8,9 @@ namespace MVCApp.ViewModels
 {
     public class CustomerViewModel
     {
-        public int Id { get; set; }
-        public List<Customer> Customers { get; set; }
+        //public int Id { get; set; }
+        public List<MembershipType> MembershipTypes { get; set; }
+
+        public Customer Customer { get; set; }
     }
 }
